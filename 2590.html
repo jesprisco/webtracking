@@ -1,16 +1,18 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+                <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
                 <html>
                 <head>
-                    <title>Webtracking for brand 2590 (Dev2)</title>
+                    <title>Example Code for Informz Tracking</title>
                     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
                     <script type="text/javascript">
                         // Initialize tracking and track the pageview
                         //-------------------------------------------------------
-                        var z_account = "46CABD53-40BE-4732-886B-A61879003CA9";
+                        var z_account = "346D6E8F-08DF-46F7-8243-784FAD58F62F";
                         var z_collector = "admincore4.dev2.invention.informz.com";
-                        var z_cookieDomain = "github.io";
+                        var z_cookieDomain = ".github.io";
                         //-------------------------------------------------------
+
                         (function (e, o, n, r, t, a, s) { e[t] || (e.GlobalSnowplowNamespace = e.GlobalSnowplowNamespace || [], e.GlobalSnowplowNamespace.push(t), e[t] = function () { (e[t].q = e[t].q || []).push(arguments) }, e[t].q = e[t].q || [], a = o.createElement(n), s = o.getElementsByTagName(n)[0], a.async = 1, a.src = r, s.parentNode.insertBefore(a, s)) }(window, document, "script", "https:/web_trk/sp.js", "informz_trk")), informz_trk("newTracker", "infz", z_collector + "/web_trk/collector/", { appId: z_account, cookieDomain: z_cookieDomain }), informz_trk("setUserIdFromLocation", "_zs"), informz_trk("enableActivityTracking", 30, 15); informz_trk("trackPageView", null);
+
                     </script>
                     <!-- Example events -->
                     <script type="text/javascript">
@@ -55,19 +57,23 @@
                                 '11.99',          // Unit Price (Required)
                                 '1'               // Quantity (Required)
                             );
+
                             informz_trk('trackTrans'); //submits transaction to Informz, place after last purchase on page
                         }
                     </script>
                 </head>
+
                 <body style="font-family:Arial">
                     <h1>Informz Tracking Sample Page</h1>
                     <h2>This shows how to use page tracking, interaction tracking and online purchase tracking.</h2>
                     <p>
                         Press the buttons below to trigger individual interactions:<br>
-                        <button type="button" onclick="WhitepaperDownloaded()">Downloaded Whitepaper</button>
-                        <button type="button" onclick="VideoWatched()">Watch a video</button>
-                        <button type="button" onclick="WebsiteSearch()">Search the website</button>
+                        <button type="button" onclick="WhitepaperDownloaded()">Downloaded Whitepaper</button>  
+                        <button type="button" onclick="VideoWatched()">Watch a video</button>  
+                        <button type="button" onclick="WebsiteSearch()">Search the website</button>  
                         <button type="button" onclick="PurchaseProduct()">Purchase a product</button><br>
                     </p>
                 </body>
             </html>
+
+        
