@@ -17,7 +17,7 @@ var z_cookieDomain = ".jesprisco.github.io";
                     <!-- Example events -->
                     <script type="text/javascript">
                         function WhitepaperDownloaded() {
-                            openInformzAlertDialog("A whitepaper is being downloaded.");
+                            alert("A whitepaper is being downloaded.");
                             informz_trk('trackStructEvent',
                                 'Download Whitepaper',         // Category (Required)
                                 'Benefits_of_Membership.pdf',  // Item (Required)
@@ -25,14 +25,14 @@ var z_cookieDomain = ".jesprisco.github.io";
                             );
                         }
                         function VideoWatched() {
-                            openInformzAlertDialog("A video is being watched.");
+                            alert("A video is being watched.");
                             informz_trk('trackStructEvent',
                                 'Start Video',                 // Category (Required)
                                 'Annual_Meeting_In_Review.avi' // Item (Required)
                             );
                         }
                         function WebsiteSearch() {
-                            openInformzAlertDialog("A search is made.");
+                            alert("A search is made.");
                             informz_trk('trackStructEvent',
                                 'Website',                      // Category (Required)
                                 'Search',                       // Item (Required)
@@ -40,7 +40,7 @@ var z_cookieDomain = ".jesprisco.github.io";
                             );
                         }
                         function PurchaseProduct() {
-                            openInformzAlertDialog("A purchase was made.");
+                            alert("A purchase was made.");
                             informz_trk('addItem',
                                 '12345',          // Order ID (Required)
                                 'A01',            // SKU or Code (Required)
