@@ -1,79 +1,111 @@
-                <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-                <html>
-                <head>
-                    <title>Webtracking for brand 42986 (RC)</title>
-                    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-                    <script type="text/javascript">
-                        // Initialize tracking and track the pageview
-                        //-------------------------------------------------------
-                        var z_account = "8DA0C1C4-F9C4-4A67-9CA7-28165C2FFAB9";
-                        var z_collector = "JIMV2.informzrc.net";
-                        var z_cookieDomain = ".jesprisco.github.io";
-                        //-------------------------------------------------------
-
-                        (function (e, o, n, r, t, a, s) { e[t] || (e.GlobalSnowplowNamespace = e.GlobalSnowplowNamespace || [], e.GlobalSnowplowNamespace.push(t), e[t] = function () { (e[t].q = e[t].q || []).push(arguments) }, e[t].q = e[t].q || [], a = o.createElement(n), s = o.getElementsByTagName(n)[0], a.async = 1, a.src = r, s.parentNode.insertBefore(a, s)) }(window, document, "script", "https://cdn.informzrc.net/web_trk/sp.js", "informz_trk")), informz_trk("newTracker", "infz", z_collector + "/web_trk/collector/", { appId: z_account, cookieDomain: z_cookieDomain }), informz_trk("setUserIdFromLocation", "_zs"), informz_trk("enableActivityTracking", 30, 15); informz_trk("trackPageView", null);
-
-                    </script>
-                    <!-- Example events -->
-                    <script type="text/javascript">
-                        function WhitepaperDownloaded() {
-                            alert("A whitepaper is being downloaded.");
-                            informz_trk('trackStructEvent',
-                                'Download Whitepaper',         // Category (Required)
-                                'Benefits_of_Membership.pdf',  // Item (Required)
-                                'Used top link'                // Value (Optional), In this case the location of the link
-                            );
-                        }
-                        function VideoWatched() {
-                            alert("A video is being watched.");
-                            informz_trk('trackStructEvent',
-                                'Start Video',                 // Category (Required)
-                                'Annual_Meeting_In_Review.avi' // Item (Required)
-                            );
-                        }
-                        function WebsiteSearch() {
-                            alert("A search is made.");
-                            informz_trk('trackStructEvent',
-                                'Website',                      // Category (Required)
-                                'Search',                       // Item (Required)
-                                'How do I become a member'      // Value (Optional), in this case the search string
-                            );
-                        }
-                        function PurchaseProduct() {
-                            alert("A purchase was made.");
-                            informz_trk('addItem',
-                                '12345',          // Order ID (Required)
-                                'A01',            // SKU or Code (Required)
-                                'Hat',            // Product Name (Required)
-                                'Blue',           // Category (Required)
-                                '16.99',          // Unit Price (Required)
-                                '1'               // Quantity (Required)
-                            );
-                            informz_trk('addItem',
-                                '67890',          // Order ID (Required)
-                                'Z99',            // SKU or Code (Required)
-                                'T-Shirt',        // Product Name (Required)
-                                'Green Medium',   // Category (Required)
-                                '11.99',          // Unit Price (Required)
-                                '1'               // Quantity (Required)
-                            );
-
-                            informz_trk('trackTrans'); //submits transaction to Informz, place after last purchase on page
-                        }
-                    </script>
-                </head>
-
-                <body style="font-family:Arial">
-                    <h1>Informz Tracking Sample Page</h1>
-                    <h2>This shows how to use page tracking, interaction tracking and online purchase tracking.</h2>
-                    <p>
-                        Press the buttons below to trigger individual interactions:<br>
-                        <button type="button" onclick="WhitepaperDownloaded()">Downloaded Whitepaper</button>  
-                        <button type="button" onclick="VideoWatched()">Watch a video</button>  
-                        <button type="button" onclick="WebsiteSearch()">Search the website</button>  
-                        <button type="button" onclick="PurchaseProduct()">Purchase a product</button><br>
-                    </p>
-                </body>
-            </html>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Tracking Test - Brand 42986 (RC)</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript">
+        // Initialize tracking and track the pageview
+        //-------------------------------------------------------
+        var z_account = "8DA0C1C4-F9C4-4A67-9CA7-28165C2FFAB9";
+        var z_collector = "JIMV2.informzrc.net";
+        var z_cookieDomain = ".jesprisco.github.io";
+        //-------------------------------------------------------
         
+        (function (e, o, n, r, t, a, s) { 
+            e[t] || (e.GlobalSnowplowNamespace = e.GlobalSnowplowNamespace || [], 
+            e.GlobalSnowplowNamespace.push(t), e[t] = function () { 
+                (e[t].q = e[t].q || []).push(arguments) 
+            }, e[t].q = e[t].q || [], a = o.createElement(n), s = o.getElementsByTagName(n)[0], 
+            a.async = 1, a.src = r, s.parentNode.insertBefore(a, s)) 
+        }(window, document, "script", "https://cdn.informzrc.net/web_trk/sp.js", "informz_trk")), 
+        informz_trk("newTracker", "infz", z_collector + "/web_trk/collector/", { 
+            appId: z_account, 
+            cookieDomain: z_cookieDomain 
+        }), 
+        informz_trk("setUserIdFromLocation", "_zs"), 
+        informz_trk("enableActivityTracking", 30, 15); 
+        informz_trk("trackPageView", null);
+    </script>
+    
+    <!-- Example events -->
+    <script type="text/javascript">
+        function WhitepaperDownloaded() {
+            alert("A whitepaper is being downloaded.");
+            informz_trk('trackStructEvent',
+                'Download Whitepaper',         // Category (Required)
+                'Benefits_of_Membership.pdf',  // Item (Required)
+                'Used top link'                // Value (Optional), In this case the location of the link
+            );
+        }
+        
+        function VideoWatched() {
+            alert("A video is being watched.");
+            informz_trk('trackStructEvent',
+                'Start Video',                 // Category (Required)
+                'Annual_Meeting_In_Review.avi' // Item (Required)
+            );
+        }
+        
+        function WebsiteSearch() {
+            alert("A search is made.");
+            informz_trk('trackStructEvent',
+                'Website',                      // Category (Required)
+                'Search',                       // Item (Required)
+                'How do I become a member'      // Value (Optional), in this case the search string
+            );
+        }
+        
+        function PurchaseProduct() {
+            alert("A purchase was made.");
+            informz_trk('addItem',
+                '12345',          // Order ID (Required)
+                'A01',            // SKU or Code (Required)
+                'Hat',            // Product Name (Required)
+                'Blue',           // Category (Required)
+                '16.99',          // Unit Price (Required)
+                '1'               // Quantity (Required)
+            );
+            informz_trk('addItem',
+                '67890',          // Order ID (Required)
+                'Z99',            // SKU or Code (Required)
+                'T-Shirt',        // Product Name (Required)
+                'Green Medium',   // Category (Required)
+                '11.99',          // Unit Price (Required)
+                '1'               // Quantity (Required)
+            );
+
+            informz_trk('trackTrans'); //submits transaction to Informz, place after last purchase on page
+        }
+    </script>
+</head>
+
+<body>
+    <div class="brand-page">
+        <h1>Web Tracking Test Page</h1>
+        <h2>Brand 42986 (RC Environment)</h2>
+        
+        <div class="brand-info">
+            <h3>Tracking Configuration</h3>
+            <div class="tracking-config">
+                <strong>Account ID:</strong> 8DA0C1C4-F9C4-4A67-9CA7-28165C2FFAB9<br>
+                <strong>Collector:</strong> JIMV2.informzrc.net<br>
+                <strong>Cookie Domain:</strong> .jesprisco.github.io<br>
+                <strong>Environment:</strong> RC
+            </div>
+        </div>
+        
+        <p>This page demonstrates how to use page tracking, interaction tracking, and online purchase tracking.</p>
+        
+        <div class="test-buttons">
+            <button type="button" class="test-button" onclick="WhitepaperDownloaded()">Download Whitepaper</button>
+            <button type="button" class="test-button" onclick="VideoWatched()">Watch Video</button>
+            <button type="button" class="test-button" onclick="WebsiteSearch()">Search Website</button>
+            <button type="button" class="test-button" onclick="PurchaseProduct()">Purchase Product</button>
+        </div>
+        
+        <p><a href="index.html">← Back to Index</a></p>
+    </div>
+</body>
+</html>
